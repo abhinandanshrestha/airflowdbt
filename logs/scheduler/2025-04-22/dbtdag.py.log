@@ -1,0 +1,374 @@
+[2025-04-22T17:18:48.873+0000] {processor.py:186} INFO - Started process (PID=128) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:18:48.873+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:18:48.874+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:18:48.874+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:18:48.878+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:18:48.878+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dbtdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dbtdag.py", line 32, in <module>
+    dbt_task = DbtTaskGroup(
+               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dags/dbt/jaffle_shop/dbt_project.yml
+[2025-04-22T17:18:48.879+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:18:48.889+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.018 seconds
+[2025-04-22T17:19:18.980+0000] {processor.py:186} INFO - Started process (PID=135) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:19:18.981+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:19:18.982+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:19:18.982+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:19:18.986+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:19:18.986+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dbtdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dbtdag.py", line 32, in <module>
+    dbt_task = DbtTaskGroup(
+               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dags/dbt/jaffle_shop/dbt_project.yml
+[2025-04-22T17:19:18.987+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:19:18.995+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.017 seconds
+[2025-04-22T17:19:49.088+0000] {processor.py:186} INFO - Started process (PID=142) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:19:49.088+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:19:49.089+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:19:49.089+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:19:49.093+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:19:49.092+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dbtdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dbtdag.py", line 32, in <module>
+    dbt_task = DbtTaskGroup(
+               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dags/dbt/jaffle_shop/dbt_project.yml
+[2025-04-22T17:19:49.093+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:19:49.102+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.017 seconds
+[2025-04-22T17:20:07.156+0000] {processor.py:186} INFO - Started process (PID=149) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:20:07.157+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:20:07.158+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:20:07.158+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:20:07.162+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:20:07.161+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dbtdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dbtdag.py", line 32, in <module>
+    dbt_task = DbtTaskGroup(
+               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dags/dbt/jaffle_shop/dbt_project.yml
+[2025-04-22T17:20:07.162+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:20:07.172+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.019 seconds
+[2025-04-22T17:20:37.267+0000] {processor.py:186} INFO - Started process (PID=156) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:20:37.269+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:20:37.270+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:20:37.270+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:20:37.273+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:20:37.273+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dbtdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dbtdag.py", line 32, in <module>
+    dbt_task = DbtTaskGroup(
+               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dags/dbt/jaffle_shop/dbt_project.yml
+[2025-04-22T17:20:37.274+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:20:37.283+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.019 seconds
+[2025-04-22T17:21:07.372+0000] {processor.py:186} INFO - Started process (PID=163) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:07.373+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:21:07.375+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:21:07.374+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:07.378+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:21:07.377+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dbtdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dbtdag.py", line 32, in <module>
+    dbt_task = DbtTaskGroup(
+               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dags/dbt/jaffle_shop/dbt_project.yml
+[2025-04-22T17:21:07.378+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:07.387+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.018 seconds
+[2025-04-22T17:21:32.465+0000] {processor.py:186} INFO - Started process (PID=170) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:32.466+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:21:32.468+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:21:32.467+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:32.469+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:32.478+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.015 seconds
+[2025-04-22T17:21:36.485+0000] {processor.py:186} INFO - Started process (PID=171) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:36.486+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:21:36.487+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:21:36.487+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:36.489+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:21:36.488+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dbtdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dbtdag.py", line 14, in <module>
+    print(De)
+          ^^
+NameError: name 'De' is not defined
+[2025-04-22T17:21:36.489+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:36.500+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.018 seconds
+[2025-04-22T17:21:38.511+0000] {processor.py:186} INFO - Started process (PID=172) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:38.513+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:21:38.514+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:21:38.513+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:38.515+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:21:38.515+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dbtdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dbtdag.py", line 14, in <module>
+    print(DE)
+          ^^
+NameError: name 'DE' is not defined
+[2025-04-22T17:21:38.516+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:38.525+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.016 seconds
+[2025-04-22T17:21:40.527+0000] {processor.py:186} INFO - Started process (PID=173) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:40.528+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:21:40.529+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:21:40.529+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:40.530+0000] {logging_mixin.py:190} INFO - /opt/airflow/dags/dbt
+[2025-04-22T17:21:40.531+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:21:40.539+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.015 seconds
+[2025-04-22T17:22:04.628+0000] {processor.py:186} INFO - Started process (PID=180) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:22:04.630+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:22:04.631+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:22:04.631+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:22:04.632+0000] {logging_mixin.py:190} INFO - /opt/airflow/dags/dbt /opt/airflow/dags/dbt
+[2025-04-22T17:22:04.632+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:22:04.638+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.012 seconds
+[2025-04-22T17:22:30.724+0000] {processor.py:186} INFO - Started process (PID=187) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:22:30.725+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:22:30.727+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:22:30.726+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:22:30.728+0000] {logging_mixin.py:190} INFO - /opt/airflow/dags/dbt /opt/airflow/dags/dbt
+[2025-04-22T17:22:30.728+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:22:30.734+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.013 seconds
+[2025-04-22T17:22:44.771+0000] {processor.py:186} INFO - Started process (PID=188) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:22:44.772+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:22:44.773+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:22:44.773+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:22:44.775+0000] {logging_mixin.py:190} INFO - /opt/airflow/dags/dbt /opt/airflow/dags/dbt
+[2025-04-22T17:22:44.775+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:22:44.781+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.013 seconds
+[2025-04-22T17:23:14.884+0000] {processor.py:186} INFO - Started process (PID=195) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:23:14.885+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:23:14.887+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:23:14.886+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:23:14.888+0000] {logging_mixin.py:190} INFO - /opt/airflow/dags/dbt /opt/airflow/dags/dbt
+[2025-04-22T17:23:14.888+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:23:14.894+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.012 seconds
+[2025-04-22T17:24:13.661+0000] {processor.py:186} INFO - Started process (PID=128) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:13.662+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:24:13.663+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:24:13.663+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:13.664+0000] {logging_mixin.py:190} INFO - /opt/airflow/dags/dbt /opt/airflow/dags/dbt
+[2025-04-22T17:24:13.664+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:13.669+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.011 seconds
+[2025-04-22T17:24:43.770+0000] {processor.py:186} INFO - Started process (PID=135) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:43.771+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:24:43.773+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:24:43.772+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:43.774+0000] {logging_mixin.py:190} INFO - /opt/airflow/dags/dbt /opt/airflow/dags/dbt
+[2025-04-22T17:24:43.774+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:43.780+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.012 seconds
+[2025-04-22T17:24:47.790+0000] {processor.py:186} INFO - Started process (PID=136) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:47.790+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:24:47.791+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:24:47.791+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:47.793+0000] {logging_mixin.py:190} INFO - /opt/airflow/dags/dbt /opt/airflow/dags/dbt
+[2025-04-22T17:24:47.796+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:24:47.796+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dbtdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dbtdag.py", line 34, in <module>
+    dbt_task = DbtTaskGroup(
+               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dags/dbt/jaffle_shop/dbt_project.yml
+[2025-04-22T17:24:47.797+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:47.806+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.019 seconds
+[2025-04-22T17:24:48.809+0000] {processor.py:186} INFO - Started process (PID=143) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:48.810+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:24:48.812+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:24:48.812+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:48.815+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:24:48.815+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/dbtdag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dbtdag.py", line 34, in <module>
+    dbt_task = DbtTaskGroup(
+               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dags/dbt/jaffle_shop/dbt_project.yml
+[2025-04-22T17:24:48.816+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:24:48.823+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.016 seconds
+[2025-04-22T17:25:03.875+0000] {processor.py:186} INFO - Started process (PID=144) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:25:03.876+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:25:03.877+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:03.877+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:25:03.880+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:03.880+0000] {graph.py:595} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_transform__dbt_task_group...
+[2025-04-22T17:25:03.887+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:03.887+0000] {graph.py:601} INFO - Cosmos performance: Cache miss for cosmos_cache__dbt_transform__dbt_task_group
+[2025-04-22T17:25:03.888+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:03.887+0000] {graph.py:652} INFO - Trying to parse the dbt project in `/opt/airflow/dags/dbt/weather` using dbt ls...
+[2025-04-22T17:25:03.888+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:03.888+0000] {graph.py:671} INFO - Partial parse is enabled and the latest partial parse file is /opt/airflow/dags/dbt/weather/target/partial_parse.msgpack
+[2025-04-22T17:25:03.892+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:03.892+0000] {config.py:360} INFO - Profile caching is enable.
+[2025-04-22T17:25:03.892+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:03.892+0000] {base.py:241} INFO - Using mock values for profile default
+[2025-04-22T17:25:03.893+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:03.893+0000] {config.py:347} INFO - Profile not found in cache storing and using profile: /tmp/cosmos/profile/324657173b81323098d4101295212753afd47fe1d4e69c865c4202f693a8cfcc/profiles.yml.
+[2025-04-22T17:25:03.893+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:03.893+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:25:04.694+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:04.694+0000] {graph.py:260} INFO - Running command with dbt Runner: `/home/airflow/.local/bin/dbt ls --output json --project-dir /tmp/tmpc_dn95ob --profiles-dir /tmp/cosmos/profile/324657173b81323098d4101295212753afd47fe1d4e69c865c4202f693a8cfcc --profile default --target dev`
+[2025-04-22T17:25:04.694+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:04.694+0000] {runner.py:60} INFO - Trying to run dbtRunner with:
+ ['ls', '--output', 'json', '--project-dir', '/tmp/tmpc_dn95ob', '--profiles-dir', '/tmp/cosmos/profile/324657173b81323098d4101295212753afd47fe1d4e69c865c4202f693a8cfcc', '--profile', 'default', '--target', 'dev']
+ in /tmp/tmpc_dn95ob
+[2025-04-22T17:25:04.718+0000] {logging_mixin.py:190} INFO - 17:25:04  Running with dbt=1.8.7
+[2025-04-22T17:25:04.847+0000] {logging_mixin.py:190} INFO - 17:25:04  Registered adapter: postgres=1.9.0
+[2025-04-22T17:25:05.135+0000] {logging_mixin.py:190} INFO - 17:25:05  Unable to do partial parsing because of a version mismatch
+[2025-04-22T17:25:05.698+0000] {logging_mixin.py:190} INFO - 17:25:05  Found 1 model, 429 macros
+[2025-04-22T17:25:05.699+0000] {logging_mixin.py:190} INFO - {"name": "temp", "resource_type": "model", "package_name": "weather", "original_file_path": "models/temp.sql", "unique_id": "model.weather.temp", "alias": "temp", "config": {"enabled": true, "alias": null, "schema": null, "database": null, "tags": [], "meta": {}, "group": null, "materialized": "table", "incremental_strategy": null, "persist_docs": {}, "post-hook": [], "pre-hook": [], "quoting": {}, "column_types": {}, "full_refresh": null, "unique_key": null, "on_schema_change": "ignore", "on_configuration_change": "apply", "grants": {}, "packages": [], "docs": {"show": true, "node_color": null}, "contract": {"enforced": false, "alias_types": true}, "access": "protected"}, "tags": [], "depends_on": {"macros": [], "nodes": []}}
+[2025-04-22T17:25:07.403+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.403+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_transform__dbt_task_group for current version: 0.0015461770817637444
+[2025-04-22T17:25:07.404+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.404+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-04-22T17:25:07.410+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.410+0000] {graph.py:545} INFO - Total nodes: 1
+[2025-04-22T17:25:07.410+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.410+0000] {graph.py:546} INFO - Total filtered nodes: 1
+[2025-04-22T17:25:07.410+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.410+0000] {converter.py:288} INFO - Cosmos performance (dbt_transform__dbt_task_group) -  [86f4b7c6fef8|144]: It took 3.53s to parse the dbt project for DAG using LoadMode.DBT_LS
+[2025-04-22T17:25:07.411+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.411+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:25:07.411+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.411+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:25:07.412+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.412+0000] {converter.py:332} INFO - Cosmos performance (dbt_transform__dbt_task_group) - [86f4b7c6fef8|144]: It took 0.00128s to build the Airflow DAG.
+[2025-04-22T17:25:07.412+0000] {processor.py:925} INFO - DAG(s) 'dbt_transform' retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:25:07.437+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.436+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:dbt_transform
+[2025-04-22T17:25:07.440+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.440+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:dbt_transform
+[2025-04-22T17:25:07.443+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.443+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:dbt_transform
+[2025-04-22T17:25:07.447+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.446+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:dbt_transform
+[2025-04-22T17:25:07.449+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.449+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:dbt_transform
+[2025-04-22T17:25:07.452+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.452+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:dbt_transform
+[2025-04-22T17:25:07.454+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.454+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:dbt_transform
+[2025-04-22T17:25:07.455+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.454+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T17:25:07.460+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.459+0000] {dag.py:3262} INFO - Creating ORM DAG for dbt_transform
+[2025-04-22T17:25:07.460+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:07.460+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_transform to None, run_after=None
+[2025-04-22T17:25:07.468+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 3.595 seconds
+[2025-04-22T17:25:16.519+0000] {processor.py:186} INFO - Started process (PID=178) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:25:16.520+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:25:16.522+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.522+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:25:16.525+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.525+0000] {graph.py:595} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_transform__dbt_task_group...
+[2025-04-22T17:25:16.534+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.533+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_transform__dbt_task_group for current version: 0.0019020512700080872
+[2025-04-22T17:25:16.534+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.534+0000] {graph.py:612} INFO - Cosmos performance [86f4b7c6fef8|178]: The cache size for cosmos_cache__dbt_transform__dbt_task_group is 736
+[2025-04-22T17:25:16.534+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.534+0000] {graph.py:620} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_transform__dbt_task_group - 4896fcd486db2ae8ae1c1ba7ff7179e1,d41d8cd98f00b204e9800998ecf8427e
+[2025-04-22T17:25:16.534+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.534+0000] {graph.py:545} INFO - Total nodes: 1
+[2025-04-22T17:25:16.534+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.534+0000] {graph.py:546} INFO - Total filtered nodes: 1
+[2025-04-22T17:25:16.534+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.534+0000] {converter.py:288} INFO - Cosmos performance (dbt_transform__dbt_task_group) -  [86f4b7c6fef8|178]: It took 0.00911s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-04-22T17:25:16.534+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.534+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:25:16.535+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.535+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:25:16.536+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.535+0000] {converter.py:332} INFO - Cosmos performance (dbt_transform__dbt_task_group) - [86f4b7c6fef8|178]: It took 0.00133s to build the Airflow DAG.
+[2025-04-22T17:25:16.536+0000] {processor.py:925} INFO - DAG(s) 'dbt_transform' retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:25:16.537+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.537+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T17:25:16.544+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:16.543+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_transform to None, run_after=None
+[2025-04-22T17:25:16.552+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.036 seconds
+[2025-04-22T17:25:46.622+0000] {processor.py:186} INFO - Started process (PID=185) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:25:46.623+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:25:46.625+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.624+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:25:46.628+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.627+0000] {graph.py:595} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_transform__dbt_task_group...
+[2025-04-22T17:25:46.636+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.636+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_transform__dbt_task_group for current version: 0.0018827244639396667
+[2025-04-22T17:25:46.636+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.636+0000] {graph.py:612} INFO - Cosmos performance [86f4b7c6fef8|185]: The cache size for cosmos_cache__dbt_transform__dbt_task_group is 736
+[2025-04-22T17:25:46.636+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.636+0000] {graph.py:620} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_transform__dbt_task_group - 4896fcd486db2ae8ae1c1ba7ff7179e1,d41d8cd98f00b204e9800998ecf8427e
+[2025-04-22T17:25:46.636+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.636+0000] {graph.py:545} INFO - Total nodes: 1
+[2025-04-22T17:25:46.636+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.636+0000] {graph.py:546} INFO - Total filtered nodes: 1
+[2025-04-22T17:25:46.637+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.637+0000] {converter.py:288} INFO - Cosmos performance (dbt_transform__dbt_task_group) -  [86f4b7c6fef8|185]: It took 0.00911s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-04-22T17:25:46.637+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.637+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:25:46.637+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.637+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:25:46.638+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.638+0000] {converter.py:332} INFO - Cosmos performance (dbt_transform__dbt_task_group) - [86f4b7c6fef8|185]: It took 0.00131s to build the Airflow DAG.
+[2025-04-22T17:25:46.638+0000] {processor.py:925} INFO - DAG(s) 'dbt_transform' retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:25:46.649+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.649+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T17:25:46.655+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:25:46.655+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_transform to None, run_after=None
+[2025-04-22T17:25:46.662+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.043 seconds
+[2025-04-22T17:26:16.737+0000] {processor.py:186} INFO - Started process (PID=192) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:26:16.738+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:26:16.739+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.739+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:26:16.742+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.742+0000] {graph.py:595} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_transform__dbt_task_group...
+[2025-04-22T17:26:16.751+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.751+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_transform__dbt_task_group for current version: 0.0018854299560189247
+[2025-04-22T17:26:16.751+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.751+0000] {graph.py:612} INFO - Cosmos performance [86f4b7c6fef8|192]: The cache size for cosmos_cache__dbt_transform__dbt_task_group is 736
+[2025-04-22T17:26:16.751+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.751+0000] {graph.py:620} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_transform__dbt_task_group - 4896fcd486db2ae8ae1c1ba7ff7179e1,d41d8cd98f00b204e9800998ecf8427e
+[2025-04-22T17:26:16.751+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.751+0000] {graph.py:545} INFO - Total nodes: 1
+[2025-04-22T17:26:16.751+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.751+0000] {graph.py:546} INFO - Total filtered nodes: 1
+[2025-04-22T17:26:16.751+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.751+0000] {converter.py:288} INFO - Cosmos performance (dbt_transform__dbt_task_group) -  [86f4b7c6fef8|192]: It took 0.00906s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-04-22T17:26:16.751+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.751+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:26:16.752+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.752+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:26:16.753+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.753+0000] {converter.py:332} INFO - Cosmos performance (dbt_transform__dbt_task_group) - [86f4b7c6fef8|192]: It took 0.0013s to build the Airflow DAG.
+[2025-04-22T17:26:16.753+0000] {processor.py:925} INFO - DAG(s) 'dbt_transform' retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:26:16.938+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/datasets/__init__.py:156 UserWarning: The dataset URI postgres://192.168.88.40:9878/postgres.public.temp is not AIP-60 compliant: URI format postgres:// must contain database, schema, and table names. In Airflow 3, this will raise an exception.
+[2025-04-22T17:26:16.956+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.955+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T17:26:16.960+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:16.960+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_transform to None, run_after=None
+[2025-04-22T17:26:16.968+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.234 seconds
+[2025-04-22T17:26:39.811+0000] {processor.py:186} INFO - Started process (PID=199) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:26:39.813+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:26:39.814+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.814+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:26:39.817+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.817+0000] {graph.py:595} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_transform__dbt_task_group...
+[2025-04-22T17:26:39.826+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.826+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_transform__dbt_task_group for current version: 0.0018910402432084084
+[2025-04-22T17:26:39.826+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.826+0000] {graph.py:612} INFO - Cosmos performance [86f4b7c6fef8|199]: The cache size for cosmos_cache__dbt_transform__dbt_task_group is 736
+[2025-04-22T17:26:39.826+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.826+0000] {graph.py:620} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_transform__dbt_task_group - 4896fcd486db2ae8ae1c1ba7ff7179e1,d41d8cd98f00b204e9800998ecf8427e
+[2025-04-22T17:26:39.826+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.826+0000] {graph.py:545} INFO - Total nodes: 1
+[2025-04-22T17:26:39.826+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.826+0000] {graph.py:546} INFO - Total filtered nodes: 1
+[2025-04-22T17:26:39.826+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.826+0000] {converter.py:288} INFO - Cosmos performance (dbt_transform__dbt_task_group) -  [86f4b7c6fef8|199]: It took 0.00958s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-04-22T17:26:39.827+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.827+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:26:39.827+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.827+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:26:39.828+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.828+0000] {converter.py:332} INFO - Cosmos performance (dbt_transform__dbt_task_group) - [86f4b7c6fef8|199]: It took 0.0015s to build the Airflow DAG.
+[2025-04-22T17:26:39.829+0000] {processor.py:925} INFO - DAG(s) 'dbt_transform' retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:26:39.830+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.830+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T17:26:39.837+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:26:39.837+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_transform to None, run_after=None
+[2025-04-22T17:26:39.846+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.038 seconds
+[2025-04-22T17:27:09.916+0000] {processor.py:186} INFO - Started process (PID=206) to work on /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:27:09.917+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dbtdag.py for tasks to queue
+[2025-04-22T17:27:09.918+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.918+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:27:09.922+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.921+0000] {graph.py:595} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_transform__dbt_task_group...
+[2025-04-22T17:27:09.930+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.930+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_transform__dbt_task_group for current version: 0.0019207261502742767
+[2025-04-22T17:27:09.930+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.930+0000] {graph.py:612} INFO - Cosmos performance [86f4b7c6fef8|206]: The cache size for cosmos_cache__dbt_transform__dbt_task_group is 736
+[2025-04-22T17:27:09.931+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.931+0000] {graph.py:620} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_transform__dbt_task_group - 4896fcd486db2ae8ae1c1ba7ff7179e1,d41d8cd98f00b204e9800998ecf8427e
+[2025-04-22T17:27:09.931+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.931+0000] {graph.py:545} INFO - Total nodes: 1
+[2025-04-22T17:27:09.931+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.931+0000] {graph.py:546} INFO - Total filtered nodes: 1
+[2025-04-22T17:27:09.931+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.931+0000] {converter.py:288} INFO - Cosmos performance (dbt_transform__dbt_task_group) -  [86f4b7c6fef8|206]: It took 0.00958s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-04-22T17:27:09.931+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.931+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:27:09.932+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.932+0000] {project.py:33} INFO - Project /opt/airflow/dags/dbt/weather does not have {'dependencies.yml', 'packages.yml'}
+[2025-04-22T17:27:09.932+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:09.932+0000] {converter.py:332} INFO - Cosmos performance (dbt_transform__dbt_task_group) - [86f4b7c6fef8|206]: It took 0.00138s to build the Airflow DAG.
+[2025-04-22T17:27:09.933+0000] {processor.py:925} INFO - DAG(s) 'dbt_transform' retrieved from /opt/airflow/dags/dbtdag.py
+[2025-04-22T17:27:10.012+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/datasets/__init__.py:156 UserWarning: The dataset URI postgres://192.168.88.40:9878/postgres.public.temp is not AIP-60 compliant: URI format postgres:// must contain database, schema, and table names. In Airflow 3, this will raise an exception.
+[2025-04-22T17:27:10.013+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/datasets/__init__.py:156 UserWarning: The dataset URI postgres://192.168.88.40:9878/postgres.transformed.temp is not AIP-60 compliant: URI format postgres:// must contain database, schema, and table names. In Airflow 3, this will raise an exception.
+[2025-04-22T17:27:10.031+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:10.031+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-22T17:27:10.036+0000] {logging_mixin.py:190} INFO - [2025-04-22T17:27:10.036+0000] {dag.py:4180} INFO - Setting next_dagrun for dbt_transform to None, run_after=None
+[2025-04-22T17:27:10.044+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dbtdag.py took 0.132 seconds

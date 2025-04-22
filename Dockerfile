@@ -10,4 +10,6 @@ USER airflow
 
 # Install dbt-core and dbt adapter (choose the one you need)
 # For PostgreSQL
-RUN pip install --no-cache-dir dbt-core==1.9.4
+RUN pip install --no-cache-dir dbt-core dbt-postgres 
+
+RUN pip install --no-cache-dir "astronomer-cosmos[dbt-postgres]"

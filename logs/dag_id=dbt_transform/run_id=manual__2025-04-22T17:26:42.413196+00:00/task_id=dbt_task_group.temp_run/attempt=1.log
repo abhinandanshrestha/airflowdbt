@@ -1,0 +1,49 @@
+[2025-04-22T17:26:44.009+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-22T17:26:44.019+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_transform.dbt_task_group.temp_run manual__2025-04-22T17:26:42.413196+00:00 [queued]>
+[2025-04-22T17:26:44.022+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_transform.dbt_task_group.temp_run manual__2025-04-22T17:26:42.413196+00:00 [queued]>
+[2025-04-22T17:26:44.022+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 3
+[2025-04-22T17:26:44.028+0000] {taskinstance.py:2890} INFO - Executing <Task(DbtRunLocalOperator): dbt_task_group.temp_run> on 2025-04-22 17:26:42.413196+00:00
+[2025-04-22T17:26:44.033+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=494) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-22T17:26:44.033+0000] {standard_task_runner.py:72} INFO - Started process 495 to run task
+[2025-04-22T17:26:44.034+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dbt_transform', 'dbt_task_group.temp_run', 'manual__2025-04-22T17:26:42.413196+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/dbtdag.py', '--cfg-path', '/tmp/tmpq9_8maj4']
+[2025-04-22T17:26:44.035+0000] {standard_task_runner.py:105} INFO - Job 31: Subtask dbt_task_group.temp_run
+[2025-04-22T17:26:44.056+0000] {task_command.py:467} INFO - Running <TaskInstance: dbt_transform.dbt_task_group.temp_run manual__2025-04-22T17:26:42.413196+00:00 [running]> on host afde126db233
+[2025-04-22T17:26:44.094+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_transform' AIRFLOW_CTX_TASK_ID='dbt_task_group.temp_run' AIRFLOW_CTX_EXECUTION_DATE='2025-04-22T17:26:42.413196+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-22T17:26:42.413196+00:00'
+[2025-04-22T17:26:44.096+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-22T17:26:44.749+0000] {local.py:213} INFO - dbtRunner is available. Using dbtRunner for invoking dbt.
+[2025-04-22T17:26:44.749+0000] {local.py:416} INFO - Cloning project to writable temp directory /tmp/tmptrsd2ar0 from /opt/airflow/dags/dbt/weather
+[2025-04-22T17:26:44.749+0000] {local.py:427} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/dbt_transform__dbt_task_group/target/partial_parse.msgpack
+[2025-04-22T17:26:44.752+0000] {config.py:360} INFO - Profile caching is enable.
+[2025-04-22T17:26:44.757+0000] {base.py:84} INFO - Retrieving connection 'postgres'
+[2025-04-22T17:26:44.757+0000] {base.py:244} INFO - Using real values for profile default
+[2025-04-22T17:26:44.758+0000] {config.py:347} INFO - Profile not found in cache storing and using profile: /tmp/cosmos/profile/e6e13df970e8fe3ebb4d61c03236437e24a01a4909ada5aa9ec817ff39ff3ca3/profiles.yml.
+[2025-04-22T17:26:44.758+0000] {runner.py:60} INFO - Trying to run dbtRunner with:
+ ['run', '--models', 'temp', '--project-dir', '/tmp/tmptrsd2ar0', '--profiles-dir', '/tmp/cosmos/profile/e6e13df970e8fe3ebb4d61c03236437e24a01a4909ada5aa9ec817ff39ff3ca3', '--profile', 'default', '--target', 'dev']
+ in /tmp/tmptrsd2ar0
+[2025-04-22T17:26:44.790+0000] {logging_mixin.py:190} INFO - 17:26:44  Running with dbt=1.8.7
+[2025-04-22T17:26:44.898+0000] {logging_mixin.py:190} INFO - 17:26:44  Registered adapter: postgres=1.9.0
+[2025-04-22T17:26:45.197+0000] {logging_mixin.py:190} INFO - 17:26:45  Unable to do partial parsing because profile has changed
+[2025-04-22T17:26:45.622+0000] {logging_mixin.py:190} INFO - 17:26:45  Found 1 model, 429 macros
+[2025-04-22T17:26:45.623+0000] {logging_mixin.py:190} INFO - 17:26:45
+[2025-04-22T17:26:45.667+0000] {logging_mixin.py:190} INFO - 17:26:45  Concurrency: 1 threads (target='dev')
+[2025-04-22T17:26:45.668+0000] {logging_mixin.py:190} INFO - 17:26:45
+[2025-04-22T17:26:45.669+0000] {logging_mixin.py:190} INFO - 17:26:45  1 of 1 START sql table model transformed.temp .................................. [RUN]
+[2025-04-22T17:26:45.722+0000] {logging_mixin.py:190} INFO - 17:26:45  1 of 1 OK created sql table model transformed.temp ............................. [SELECT 3 in 0.05s]
+[2025-04-22T17:26:45.728+0000] {logging_mixin.py:190} INFO - 17:26:45
+[2025-04-22T17:26:45.728+0000] {logging_mixin.py:190} INFO - 17:26:45  Finished running 1 table model in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[2025-04-22T17:26:45.740+0000] {logging_mixin.py:190} INFO - 17:26:45
+[2025-04-22T17:26:45.741+0000] {logging_mixin.py:190} INFO - 17:26:45  Completed successfully
+[2025-04-22T17:26:45.741+0000] {logging_mixin.py:190} INFO - 17:26:45
+[2025-04-22T17:26:45.741+0000] {logging_mixin.py:190} INFO - 17:26:45  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2025-04-22T17:26:46.778+0000] {local.py:465} INFO - Inlets: []
+[2025-04-22T17:26:46.778+0000] {local.py:466} INFO - Outlets: [Dataset(uri='postgres://192.168.88.40:9878/postgres.transformed.temp', extra=None)]
+[2025-04-22T17:26:46.778+0000] {local.py:656} INFO - Assigning inlets/outlets with DatasetAlias
+[2025-04-22T17:26:46.800+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-22T17:26:46.800+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=dbt_transform, task_id=dbt_task_group.temp_run, run_id=manual__2025-04-22T17:26:42.413196+00:00, execution_date=20250422T172642, start_date=20250422T172644, end_date=20250422T172646
+[2025-04-22T17:26:46.803+0000] {taskinstance.py:3054} WARNING - Created a new DatasetModel(uri='postgres://192.168.88.40:9878/postgres.transformed.temp', extra={}) as it did not exist.
+[2025-04-22T17:26:46.805+0000] {taskinstance.py:3064} INFO - Creating event for DatasetModel(uri='postgres://192.168.88.40:9878/postgres.transformed.temp', extra={}) through aliases "dbt_transform__dbt_task_group__temp_run"
+[2025-04-22T17:26:46.852+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-22T17:26:46.861+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-22T17:26:46.863+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

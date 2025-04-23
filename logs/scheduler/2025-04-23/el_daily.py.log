@@ -3222,3 +3222,66 @@ SyntaxError: keyword argument repeated: schedule_interval
 [2025-04-23T11:07:05.208+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:07:05.207+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-04-23T11:07:05.218+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:07:05.218+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_weather_data_daily to 2025-04-22 23:15:00+00:00, run_after=2025-04-23 23:15:00+00:00
 [2025-04-23T11:07:05.226+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/el_daily.py took 0.180 seconds
+[2025-04-23T11:07:35.352+0000] {processor.py:186} INFO - Started process (PID=4657) to work on /opt/airflow/dags/el_daily.py
+[2025-04-23T11:07:35.352+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/el_daily.py for tasks to queue
+[2025-04-23T11:07:35.353+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:07:35.352+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:07:35.499+0000] {processor.py:925} INFO - DAG(s) 'fetch_weather_data_daily' retrieved from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:07:35.510+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:07:35.509+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T11:07:35.521+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:07:35.520+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_weather_data_daily to 2025-04-22 23:15:00+00:00, run_after=2025-04-23 23:15:00+00:00
+[2025-04-23T11:07:35.529+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/el_daily.py took 0.180 seconds
+[2025-04-23T11:08:05.748+0000] {processor.py:186} INFO - Started process (PID=4668) to work on /opt/airflow/dags/el_daily.py
+[2025-04-23T11:08:05.750+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/el_daily.py for tasks to queue
+[2025-04-23T11:08:05.750+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:08:05.750+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:08:05.896+0000] {processor.py:925} INFO - DAG(s) 'fetch_weather_data_daily' retrieved from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:08:05.906+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:08:05.906+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T11:08:05.917+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:08:05.917+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_weather_data_daily to 2025-04-22 23:15:00+00:00, run_after=2025-04-23 23:15:00+00:00
+[2025-04-23T11:08:05.925+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/el_daily.py took 0.180 seconds
+[2025-04-23T11:08:36.061+0000] {processor.py:186} INFO - Started process (PID=4679) to work on /opt/airflow/dags/el_daily.py
+[2025-04-23T11:08:36.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/el_daily.py for tasks to queue
+[2025-04-23T11:08:36.062+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:08:36.061+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:08:36.209+0000] {processor.py:925} INFO - DAG(s) 'fetch_weather_data_daily' retrieved from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:08:36.220+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:08:36.220+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T11:08:36.231+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:08:36.231+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_weather_data_daily to 2025-04-22 23:15:00+00:00, run_after=2025-04-23 23:15:00+00:00
+[2025-04-23T11:08:36.237+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/el_daily.py took 0.180 seconds
+[2025-04-23T11:09:06.459+0000] {processor.py:186} INFO - Started process (PID=4690) to work on /opt/airflow/dags/el_daily.py
+[2025-04-23T11:09:06.461+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/el_daily.py for tasks to queue
+[2025-04-23T11:09:06.461+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:09:06.461+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:09:06.607+0000] {processor.py:925} INFO - DAG(s) 'fetch_weather_data_daily' retrieved from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:09:06.618+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:09:06.618+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T11:09:06.628+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:09:06.628+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_weather_data_daily to 2025-04-22 23:15:00+00:00, run_after=2025-04-23 23:15:00+00:00
+[2025-04-23T11:09:06.637+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/el_daily.py took 0.180 seconds
+[2025-04-23T11:09:36.759+0000] {processor.py:186} INFO - Started process (PID=4701) to work on /opt/airflow/dags/el_daily.py
+[2025-04-23T11:09:36.759+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/el_daily.py for tasks to queue
+[2025-04-23T11:09:36.760+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:09:36.760+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:09:36.907+0000] {processor.py:925} INFO - DAG(s) 'fetch_weather_data_daily' retrieved from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:09:36.917+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:09:36.917+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T11:09:36.928+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:09:36.928+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_weather_data_daily to 2025-04-22 23:15:00+00:00, run_after=2025-04-23 23:15:00+00:00
+[2025-04-23T11:09:36.937+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/el_daily.py took 0.181 seconds
+[2025-04-23T11:10:07.171+0000] {processor.py:186} INFO - Started process (PID=4712) to work on /opt/airflow/dags/el_daily.py
+[2025-04-23T11:10:07.172+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/el_daily.py for tasks to queue
+[2025-04-23T11:10:07.173+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:10:07.173+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:10:07.319+0000] {processor.py:925} INFO - DAG(s) 'fetch_weather_data_daily' retrieved from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:10:07.329+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:10:07.329+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T11:10:07.340+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:10:07.340+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_weather_data_daily to 2025-04-22 23:15:00+00:00, run_after=2025-04-23 23:15:00+00:00
+[2025-04-23T11:10:07.348+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/el_daily.py took 0.181 seconds
+[2025-04-23T11:10:37.466+0000] {processor.py:186} INFO - Started process (PID=4724) to work on /opt/airflow/dags/el_daily.py
+[2025-04-23T11:10:37.467+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/el_daily.py for tasks to queue
+[2025-04-23T11:10:37.467+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:10:37.467+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:10:37.614+0000] {processor.py:925} INFO - DAG(s) 'fetch_weather_data_daily' retrieved from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:10:37.624+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:10:37.624+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T11:10:37.635+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:10:37.635+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_weather_data_daily to 2025-04-22 23:15:00+00:00, run_after=2025-04-23 23:15:00+00:00
+[2025-04-23T11:10:37.643+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/el_daily.py took 0.179 seconds
+[2025-04-23T11:11:07.888+0000] {processor.py:186} INFO - Started process (PID=4735) to work on /opt/airflow/dags/el_daily.py
+[2025-04-23T11:11:07.889+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/el_daily.py for tasks to queue
+[2025-04-23T11:11:07.889+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:11:07.889+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:11:08.036+0000] {processor.py:925} INFO - DAG(s) 'fetch_weather_data_daily' retrieved from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:11:08.047+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:11:08.047+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T11:11:08.058+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:11:08.058+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_weather_data_daily to 2025-04-22 23:15:00+00:00, run_after=2025-04-23 23:15:00+00:00
+[2025-04-23T11:11:08.066+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/el_daily.py took 0.181 seconds
+[2025-04-23T11:11:38.134+0000] {processor.py:186} INFO - Started process (PID=4746) to work on /opt/airflow/dags/el_daily.py
+[2025-04-23T11:11:38.134+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/el_daily.py for tasks to queue
+[2025-04-23T11:11:38.135+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:11:38.135+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:11:38.269+0000] {processor.py:925} INFO - DAG(s) 'fetch_weather_data_daily' retrieved from /opt/airflow/dags/el_daily.py
+[2025-04-23T11:11:38.279+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:11:38.278+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-23T11:11:38.288+0000] {logging_mixin.py:190} INFO - [2025-04-23T11:11:38.288+0000] {dag.py:4180} INFO - Setting next_dagrun for fetch_weather_data_daily to 2025-04-22 23:15:00+00:00, run_after=2025-04-23 23:15:00+00:00
+[2025-04-23T11:11:38.296+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/el_daily.py took 0.165 seconds

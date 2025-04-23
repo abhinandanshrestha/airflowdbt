@@ -1,16 +1,20 @@
-# Step1:
+# Running dbt in isolation
+## Step1:
 ```
 pip install dbt-core dbt-postgres
 ```
 
-# Step2: 
+## Step 2: create packages.yml file inslide your dbt project and add
 ```
-git clone https://github.com/abhinandanshrestha/airflowdbt
-cd airflowdbt/
-mkdir -p ./dags ./logs ./plugins ./config
-echo -e "AIRFLOW_UID=$(id -u)" > .env
+packages:
+  - package: dbt-labs/dbt_utils
+    version: [">=0.8.0", "<1.0.0"]
 ```
 
+## Step 3 : Run
+```
+dbt deps
+```
 ### SQL For Simulation
 ```
 create table weather (
@@ -36,12 +40,22 @@ select
 from transformed."temp" t 
 ```
 
-# Step3:
+
+# Running dbt with airflow
+# Step 1:  Clone the repo
+```
+git clone https://github.com/abhinandanshrestha/airflowdbt
+cd airflowdbt/
+mkdir -p ./dags ./logs ./plugins ./config
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+```
+
+# Step2:
 ```
 docker compose up -d
 ```
 
-# Step4:
+# Step3:
 ```
 docker exec -it <worker_container> bash
 cd weather/

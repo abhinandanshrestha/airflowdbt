@@ -1,0 +1,25 @@
+[2025-04-23T09:30:02.244+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-23T09:30:02.254+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data.extract_weather_data scheduled__2025-04-23T09:00:00+00:00 [queued]>
+[2025-04-23T09:30:02.258+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data.extract_weather_data scheduled__2025-04-23T09:00:00+00:00 [queued]>
+[2025-04-23T09:30:02.258+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-23T09:30:02.264+0000] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): extract_weather_data> on 2025-04-23 09:00:00+00:00
+[2025-04-23T09:30:02.271+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=5134) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-23T09:30:02.272+0000] {standard_task_runner.py:72} INFO - Started process 5136 to run task
+[2025-04-23T09:30:02.272+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fetch_weather_data', 'extract_weather_data', 'scheduled__2025-04-23T09:00:00+00:00', '--job-id', '219', '--raw', '--subdir', 'DAGS_FOLDER/el_30min.py', '--cfg-path', '/tmp/tmpt1ljnxro']
+[2025-04-23T09:30:02.273+0000] {standard_task_runner.py:105} INFO - Job 219: Subtask extract_weather_data
+[2025-04-23T09:30:02.298+0000] {task_command.py:467} INFO - Running <TaskInstance: fetch_weather_data.extract_weather_data scheduled__2025-04-23T09:00:00+00:00 [running]> on host eb276ba0497d
+[2025-04-23T09:30:02.336+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_weather_data' AIRFLOW_CTX_TASK_ID='extract_weather_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-04-23T09:00:00+00:00'
+[2025-04-23T09:30:02.337+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-23T09:30:02.850+0000] {el_30min.py:94} INFO - Kathmandu Weather data fetched successfully
+[2025-04-23T09:30:02.850+0000] {el_30min.py:95} INFO - Response data: {'location': {'name': 'Kathmandu', 'region': '', 'country': 'Nepal', 'lat': 27.7167, 'lon': 85.3167, 'tz_id': 'Asia/Kathmandu', 'localtime_epoch': 1745400090, 'localtime': '2025-04-23 15:06'}, 'current': {'last_updated_epoch': 1745399700, 'last_updated': '2025-04-23 15:00', 'temp_c': 31.3, 'temp_f': 88.3, 'is_day': 1, 'condition': {'text': 'Sunny', 'icon': '//cdn.weatherapi.com/weather/64x64/day/113.png', 'code': 1000}, 'wind_mph': 7.8, 'wind_kph': 12.6, 'wind_degree': 246, 'wind_dir': 'WSW', 'pressure_mb': 1010.0, 'pressure_in': 29.83, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 26, 'cloud': 25, 'feelslike_c': 29.1, 'feelslike_f': 84.3, 'windchill_c': 30.9, 'windchill_f': 87.6, 'heatindex_c': 28.7, 'heatindex_f': 83.6, 'dewpoint_c': 0.1, 'dewpoint_f': 32.2, 'vis_km': 10.0, 'vis_miles': 6.0, 'uv': 3.1, 'gust_mph': 9.0, 'gust_kph': 14.5, 'air_quality': {'co': 710.4, 'no2': 2.22, 'o3': 172.0, 'so2': 13.505, 'pm2_5': 62.9, 'pm10': 206.275, 'us-epa-index': 3, 'gb-defra-index': 8}}}
+[2025-04-23T09:30:02.854+0000] {python.py:240} INFO - Done. Returned value was:   location_name country      lat  ...     pm10 us_epa_index  gb_defra_index
+0     Kathmandu   Nepal  27.7167  ...  206.275            3               8
+
+[1 rows x 42 columns]
+[2025-04-23T09:30:02.903+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-23T09:30:02.903+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=fetch_weather_data, task_id=extract_weather_data, run_id=scheduled__2025-04-23T09:00:00+00:00, execution_date=20250423T090000, start_date=20250423T093002, end_date=20250423T093002
+[2025-04-23T09:30:02.926+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-23T09:30:02.937+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-23T09:30:02.938+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

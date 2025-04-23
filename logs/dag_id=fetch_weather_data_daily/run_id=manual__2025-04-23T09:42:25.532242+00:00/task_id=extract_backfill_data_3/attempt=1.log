@@ -1,0 +1,46 @@
+[2025-04-23T09:42:32.828+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-23T09:42:32.837+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data_daily.extract_backfill_data_3 manual__2025-04-23T09:42:25.532242+00:00 [queued]>
+[2025-04-23T09:42:32.841+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data_daily.extract_backfill_data_3 manual__2025-04-23T09:42:25.532242+00:00 [queued]>
+[2025-04-23T09:42:32.841+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-04-23T09:42:32.847+0000] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): extract_backfill_data_3> on 2025-04-23 09:42:25.532242+00:00
+[2025-04-23T09:42:32.853+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=6999) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-23T09:42:32.853+0000] {standard_task_runner.py:72} INFO - Started process 7001 to run task
+[2025-04-23T09:42:32.854+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fetch_weather_data_daily', 'extract_backfill_data_3', 'manual__2025-04-23T09:42:25.532242+00:00', '--job-id', '265', '--raw', '--subdir', 'DAGS_FOLDER/el_daily.py', '--cfg-path', '/tmp/tmp3m7z4_d5']
+[2025-04-23T09:42:32.855+0000] {standard_task_runner.py:105} INFO - Job 265: Subtask extract_backfill_data_3
+[2025-04-23T09:42:32.878+0000] {task_command.py:467} INFO - Running <TaskInstance: fetch_weather_data_daily.extract_backfill_data_3 manual__2025-04-23T09:42:25.532242+00:00 [running]> on host eb276ba0497d
+[2025-04-23T09:42:32.914+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_weather_data_daily' AIRFLOW_CTX_TASK_ID='extract_backfill_data_3' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T09:42:25.532242+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-23T09:42:25.532242+00:00'
+[2025-04-23T09:42:32.915+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-23T09:42:33.092+0000] {python.py:240} INFO - Done. Returned value was:          name region country      lat  ...  vis_miles gust_mph  gust_kph   uv
+0   Kathmandu          Nepal  27.7167  ...        5.0      3.2       5.1  0.0
+1   Kathmandu          Nepal  27.7167  ...        5.0      4.4       7.0  0.0
+2   Kathmandu          Nepal  27.7167  ...        6.0      4.6       7.4  0.0
+3   Kathmandu          Nepal  27.7167  ...        5.0      2.3       3.7  0.0
+4   Kathmandu          Nepal  27.7167  ...        6.0      6.1       9.8  0.0
+5   Kathmandu          Nepal  27.7167  ...        6.0      3.8       6.0  0.0
+6   Kathmandu          Nepal  27.7167  ...        6.0      1.1       1.8  5.0
+7   Kathmandu          Nepal  27.7167  ...        6.0      2.8       4.5  4.0
+8   Kathmandu          Nepal  27.7167  ...        6.0      5.4       8.6  5.0
+9   Kathmandu          Nepal  27.7167  ...        6.0      6.4      10.2  5.0
+10  Kathmandu          Nepal  27.7167  ...        6.0      7.3      11.7  5.0
+11  Kathmandu          Nepal  27.7167  ...        6.0      7.7      12.3  6.0
+12  Kathmandu          Nepal  27.7167  ...        6.0     10.4      16.7  6.0
+13  Kathmandu          Nepal  27.7167  ...        6.0     11.3      18.1  6.0
+14  Kathmandu          Nepal  27.7167  ...        6.0     11.3      18.2  7.0
+15  Kathmandu          Nepal  27.7167  ...        6.0     12.1      19.5  7.0
+16  Kathmandu          Nepal  27.7167  ...        6.0     11.7      18.9  7.0
+17  Kathmandu          Nepal  27.7167  ...        6.0     11.8      19.0  6.0
+18  Kathmandu          Nepal  27.7167  ...        6.0      9.2      14.8  6.0
+19  Kathmandu          Nepal  27.7167  ...        6.0      8.5      13.6  0.0
+20  Kathmandu          Nepal  27.7167  ...        6.0      9.0      14.4  0.0
+21  Kathmandu          Nepal  27.7167  ...        6.0      8.5      13.7  0.0
+22  Kathmandu          Nepal  27.7167  ...        6.0      7.7      12.4  0.0
+23  Kathmandu          Nepal  27.7167  ...        6.0      9.4      15.1  0.0
+
+[24 rows x 41 columns]
+[2025-04-23T09:42:33.147+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-23T09:42:33.147+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=fetch_weather_data_daily, task_id=extract_backfill_data_3, run_id=manual__2025-04-23T09:42:25.532242+00:00, execution_date=20250423T094225, start_date=20250423T094232, end_date=20250423T094233
+[2025-04-23T09:42:33.187+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-23T09:42:33.200+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-23T09:42:33.202+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,22 @@
+[2025-04-23T04:41:49.375+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-23T04:41:49.383+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data.fetch_weather_data manual__2025-04-23T04:40:22.997000+00:00 [queued]>
+[2025-04-23T04:41:49.386+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data.fetch_weather_data manual__2025-04-23T04:40:22.997000+00:00 [queued]>
+[2025-04-23T04:41:49.386+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 3
+[2025-04-23T04:41:49.393+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): fetch_weather_data> on 2025-04-23 04:40:22.997000+00:00
+[2025-04-23T04:41:49.398+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1371) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-23T04:41:49.399+0000] {standard_task_runner.py:72} INFO - Started process 1372 to run task
+[2025-04-23T04:41:49.399+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'fetch_weather_data', 'fetch_weather_data', 'manual__2025-04-23T04:40:22.997000+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/el.py', '--cfg-path', '/tmp/tmpy62n9u_n']
+[2025-04-23T04:41:49.400+0000] {standard_task_runner.py:105} INFO - Job 38: Subtask fetch_weather_data
+[2025-04-23T04:41:49.423+0000] {task_command.py:467} INFO - Running <TaskInstance: fetch_weather_data.fetch_weather_data manual__2025-04-23T04:40:22.997000+00:00 [running]> on host eb276ba0497d
+[2025-04-23T04:41:49.460+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fetch_weather_data' AIRFLOW_CTX_TASK_ID='fetch_weather_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T04:40:22.997000+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-23T04:40:22.997000+00:00'
+[2025-04-23T04:41:49.461+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-23T04:41:49.737+0000] {el.py:23} INFO - Kathmandu Weather data fetched successfully
+[2025-04-23T04:41:49.737+0000] {el.py:24} INFO - Response data: {'location': {'name': 'Kathmandu', 'region': '', 'country': 'Nepal', 'lat': 27.7167, 'lon': 85.3167, 'tz_id': 'Asia/Kathmandu', 'localtime_epoch': 1745383085, 'localtime': '2025-04-23 10:23'}, 'current': {'last_updated_epoch': 1745382600, 'last_updated': '2025-04-23 10:15', 'temp_c': 29.1, 'temp_f': 84.4, 'is_day': 1, 'condition': {'text': 'Sunny', 'icon': '//cdn.weatherapi.com/weather/64x64/day/113.png', 'code': 1000}, 'wind_mph': 3.6, 'wind_kph': 5.8, 'wind_degree': 222, 'wind_dir': 'SW', 'pressure_mb': 1014.0, 'pressure_in': 29.94, 'precip_mm': 0.0, 'precip_in': 0.0, 'humidity': 31, 'cloud': 25, 'feelslike_c': 27.0, 'feelslike_f': 80.5, 'windchill_c': 30.4, 'windchill_f': 86.7, 'heatindex_c': 28.2, 'heatindex_f': 82.7, 'dewpoint_c': -1.3, 'dewpoint_f': 29.7, 'vis_km': 7.0, 'vis_miles': 4.0, 'uv': 9.8, 'gust_mph': 4.1, 'gust_kph': 6.6}}
+[2025-04-23T04:41:49.738+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-23T04:41:49.743+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-23T04:41:49.744+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=fetch_weather_data, task_id=fetch_weather_data, run_id=manual__2025-04-23T04:40:22.997000+00:00, execution_date=20250423T044022, start_date=20250423T044149, end_date=20250423T044149
+[2025-04-23T04:41:49.773+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-23T04:41:49.782+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-23T04:41:49.784+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

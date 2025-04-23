@@ -21,7 +21,6 @@ profile_config = ProfileConfig(
         profile_args={"schema": "transformed"},
     )
 )
-
 with DAG(
     dag_id="dbt_transform",
     start_date=datetime(2025, 4, 22),

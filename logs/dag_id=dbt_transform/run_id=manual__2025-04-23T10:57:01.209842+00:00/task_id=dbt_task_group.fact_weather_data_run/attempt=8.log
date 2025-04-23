@@ -1,0 +1,56 @@
+[2025-04-23T11:05:33.242+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-23T11:05:33.253+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_transform.dbt_task_group.fact_weather_data_run manual__2025-04-23T10:57:01.209842+00:00 [queued]>
+[2025-04-23T11:05:33.257+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_transform.dbt_task_group.fact_weather_data_run manual__2025-04-23T10:57:01.209842+00:00 [queued]>
+[2025-04-23T11:05:33.257+0000] {taskinstance.py:2867} INFO - Starting attempt 8 of 10
+[2025-04-23T11:05:33.263+0000] {taskinstance.py:2890} INFO - Executing <Task(DbtRunLocalOperator): dbt_task_group.fact_weather_data_run> on 2025-04-23 10:57:01.209842+00:00
+[2025-04-23T11:05:33.269+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=14748) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-23T11:05:33.270+0000] {standard_task_runner.py:72} INFO - Started process 14749 to run task
+[2025-04-23T11:05:33.270+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dbt_transform', 'dbt_task_group.fact_weather_data_run', 'manual__2025-04-23T10:57:01.209842+00:00', '--job-id', '338', '--raw', '--subdir', 'DAGS_FOLDER/dbtdag.py', '--cfg-path', '/tmp/tmp3rv87rlj']
+[2025-04-23T11:05:33.270+0000] {standard_task_runner.py:105} INFO - Job 338: Subtask dbt_task_group.fact_weather_data_run
+[2025-04-23T11:05:33.292+0000] {task_command.py:467} INFO - Running <TaskInstance: dbt_transform.dbt_task_group.fact_weather_data_run manual__2025-04-23T10:57:01.209842+00:00 [running]> on host eb276ba0497d
+[2025-04-23T11:05:33.333+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_transform' AIRFLOW_CTX_TASK_ID='dbt_task_group.fact_weather_data_run' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T10:57:01.209842+00:00' AIRFLOW_CTX_TRY_NUMBER='8' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-23T10:57:01.209842+00:00'
+[2025-04-23T11:05:33.335+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-23T11:05:33.980+0000] {local.py:213} INFO - dbtRunner is available. Using dbtRunner for invoking dbt.
+[2025-04-23T11:05:33.980+0000] {local.py:416} INFO - Cloning project to writable temp directory /tmp/tmpv_tvxw6_ from /opt/airflow/dags/dbt/weather
+[2025-04-23T11:05:33.980+0000] {local.py:427} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/dbt_transform__dbt_task_group/target/partial_parse.msgpack
+[2025-04-23T11:05:33.984+0000] {config.py:360} INFO - Profile caching is enable.
+[2025-04-23T11:05:33.989+0000] {base.py:84} INFO - Retrieving connection 'postgres'
+[2025-04-23T11:05:33.989+0000] {config.py:340} INFO - Profile found in cache using profile: /tmp/cosmos/profile/e6e13df970e8fe3ebb4d61c03236437e24a01a4909ada5aa9ec817ff39ff3ca3/profiles.yml.
+[2025-04-23T11:05:33.991+0000] {runner.py:60} INFO - Trying to run dbtRunner with:
+ ['deps', '--project-dir', '/tmp/tmpv_tvxw6_', '--profiles-dir', '/tmp/cosmos/profile/e6e13df970e8fe3ebb4d61c03236437e24a01a4909ada5aa9ec817ff39ff3ca3', '--profile', 'default', '--target', 'dev']
+ in /tmp/tmpv_tvxw6_
+[2025-04-23T11:05:34.020+0000] {logging_mixin.py:190} INFO - 11:05:34  Running with dbt=1.8.7
+[2025-04-23T11:05:34.553+0000] {logging_mixin.py:190} INFO - 11:05:34  Installing dbt-labs/dbt_utils
+[2025-04-23T11:05:35.361+0000] {logging_mixin.py:190} INFO - 11:05:35  Installed from version 0.9.6
+[2025-04-23T11:05:35.362+0000] {logging_mixin.py:190} INFO - 11:05:35  Updated version available: 1.3.0
+[2025-04-23T11:05:35.362+0000] {logging_mixin.py:190} INFO - 11:05:35
+[2025-04-23T11:05:35.363+0000] {logging_mixin.py:190} INFO - 11:05:35  Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[2025-04-23T11:05:36.327+0000] {runner.py:60} INFO - Trying to run dbtRunner with:
+ ['run', '--models', 'fact_weather_data', '--project-dir', '/tmp/tmpv_tvxw6_', '--profiles-dir', '/tmp/cosmos/profile/e6e13df970e8fe3ebb4d61c03236437e24a01a4909ada5aa9ec817ff39ff3ca3', '--profile', 'default', '--target', 'dev']
+ in /tmp/tmpv_tvxw6_
+[2025-04-23T11:05:36.331+0000] {logging_mixin.py:190} INFO - 11:05:36  Running with dbt=1.8.7
+[2025-04-23T11:05:36.405+0000] {logging_mixin.py:190} INFO - 11:05:36  Registered adapter: postgres=1.9.0
+[2025-04-23T11:05:36.793+0000] {logging_mixin.py:190} INFO - 11:05:36  Found 5 models, 626 macros
+[2025-04-23T11:05:36.794+0000] {logging_mixin.py:190} INFO - 11:05:36
+[2025-04-23T11:05:36.840+0000] {logging_mixin.py:190} INFO - 11:05:36  Concurrency: 1 threads (target='dev')
+[2025-04-23T11:05:36.840+0000] {logging_mixin.py:190} INFO - 11:05:36
+[2025-04-23T11:05:36.842+0000] {logging_mixin.py:190} INFO - 11:05:36  1 of 1 START sql table model transformed.fact_weather_data ..................... [RUN]
+[2025-04-23T11:05:36.917+0000] {logging_mixin.py:190} INFO - 11:05:36  1 of 1 OK created sql table model transformed.fact_weather_data ................ [SELECT 192 in 0.07s]
+[2025-04-23T11:05:36.922+0000] {logging_mixin.py:190} INFO - 11:05:36
+[2025-04-23T11:05:36.922+0000] {logging_mixin.py:190} INFO - 11:05:36  Finished running 1 table model in 0 hours 0 minutes and 0.13 seconds (0.13s).
+[2025-04-23T11:05:36.938+0000] {logging_mixin.py:190} INFO - 11:05:36
+[2025-04-23T11:05:36.939+0000] {logging_mixin.py:190} INFO - 11:05:36  Completed successfully
+[2025-04-23T11:05:36.939+0000] {logging_mixin.py:190} INFO - 11:05:36
+[2025-04-23T11:05:36.939+0000] {logging_mixin.py:190} INFO - 11:05:36  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2025-04-23T11:05:37.984+0000] {local.py:465} INFO - Inlets: [Dataset(uri='postgres://192.168.88.40:9878/postgres.transformed.dim_district', extra=None), Dataset(uri='postgres://192.168.88.40:9878/postgres.transformed.stg_weather_data', extra=None)]
+[2025-04-23T11:05:37.984+0000] {local.py:466} INFO - Outlets: [Dataset(uri='postgres://192.168.88.40:9878/postgres.transformed.fact_weather_data', extra=None)]
+[2025-04-23T11:05:37.984+0000] {local.py:656} INFO - Assigning inlets/outlets with DatasetAlias
+[2025-04-23T11:05:38.012+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-23T11:05:38.012+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=dbt_transform, task_id=dbt_task_group.fact_weather_data_run, run_id=manual__2025-04-23T10:57:01.209842+00:00, execution_date=20250423T105701, start_date=20250423T110533, end_date=20250423T110538
+[2025-04-23T11:05:38.016+0000] {taskinstance.py:3064} INFO - Creating event for DatasetModel(uri='postgres://192.168.88.40:9878/postgres.transformed.fact_weather_data', extra={}) through aliases "dbt_transform__dbt_task_group__fact_weather_data_run"
+[2025-04-23T11:05:38.093+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-23T11:05:38.105+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-23T11:05:38.107+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

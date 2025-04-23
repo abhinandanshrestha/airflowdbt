@@ -1,0 +1,154 @@
+[2025-04-23T10:57:01.256+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-23T10:57:01.266+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_transform.dbt_task_group.temp_run manual__2025-04-23T10:46:42.794055+00:00 [queued]>
+[2025-04-23T10:57:01.269+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_transform.dbt_task_group.temp_run manual__2025-04-23T10:46:42.794055+00:00 [queued]>
+[2025-04-23T10:57:01.270+0000] {taskinstance.py:2867} INFO - Starting attempt 3 of 3
+[2025-04-23T10:57:01.275+0000] {taskinstance.py:2890} INFO - Executing <Task(DbtRunLocalOperator): dbt_task_group.temp_run> on 2025-04-23 10:46:42.794055+00:00
+[2025-04-23T10:57:01.280+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=13432) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-23T10:57:01.281+0000] {standard_task_runner.py:72} INFO - Started process 13433 to run task
+[2025-04-23T10:57:01.282+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'dbt_transform', 'dbt_task_group.temp_run', 'manual__2025-04-23T10:46:42.794055+00:00', '--job-id', '312', '--raw', '--subdir', 'DAGS_FOLDER/dbtdag.py', '--cfg-path', '/tmp/tmp1m8r0uab']
+[2025-04-23T10:57:01.282+0000] {standard_task_runner.py:105} INFO - Job 312: Subtask dbt_task_group.temp_run
+[2025-04-23T10:57:01.302+0000] {task_command.py:467} INFO - Running <TaskInstance: dbt_transform.dbt_task_group.temp_run manual__2025-04-23T10:46:42.794055+00:00 [running]> on host eb276ba0497d
+[2025-04-23T10:57:01.339+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_transform' AIRFLOW_CTX_TASK_ID='dbt_task_group.temp_run' AIRFLOW_CTX_EXECUTION_DATE='2025-04-23T10:46:42.794055+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-23T10:46:42.794055+00:00'
+[2025-04-23T10:57:01.340+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-23T10:57:01.983+0000] {local.py:213} INFO - dbtRunner is available. Using dbtRunner for invoking dbt.
+[2025-04-23T10:57:01.984+0000] {local.py:416} INFO - Cloning project to writable temp directory /tmp/tmpv159af15 from /opt/airflow/dags/dbt/weather
+[2025-04-23T10:57:01.984+0000] {local.py:427} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/dbt_transform__dbt_task_group/target/partial_parse.msgpack
+[2025-04-23T10:57:01.988+0000] {config.py:360} INFO - Profile caching is enable.
+[2025-04-23T10:57:01.992+0000] {base.py:84} INFO - Retrieving connection 'postgres'
+[2025-04-23T10:57:01.993+0000] {config.py:340} INFO - Profile found in cache using profile: /tmp/cosmos/profile/e6e13df970e8fe3ebb4d61c03236437e24a01a4909ada5aa9ec817ff39ff3ca3/profiles.yml.
+[2025-04-23T10:57:01.995+0000] {runner.py:60} INFO - Trying to run dbtRunner with:
+ ['deps', '--project-dir', '/tmp/tmpv159af15', '--profiles-dir', '/tmp/cosmos/profile/e6e13df970e8fe3ebb4d61c03236437e24a01a4909ada5aa9ec817ff39ff3ca3', '--profile', 'default', '--target', 'dev']
+ in /tmp/tmpv159af15
+[2025-04-23T10:57:02.022+0000] {logging_mixin.py:190} INFO - 10:57:02  Running with dbt=1.8.7
+[2025-04-23T10:57:02.510+0000] {logging_mixin.py:190} INFO - 10:57:02  Installing dbt-labs/dbt_utils
+[2025-04-23T10:57:03.347+0000] {logging_mixin.py:190} INFO - 10:57:03  Installed from version 0.9.6
+[2025-04-23T10:57:03.348+0000] {logging_mixin.py:190} INFO - 10:57:03  Updated version available: 1.3.0
+[2025-04-23T10:57:03.348+0000] {logging_mixin.py:190} INFO - 10:57:03
+[2025-04-23T10:57:03.349+0000] {logging_mixin.py:190} INFO - 10:57:03  Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[2025-04-23T10:57:04.510+0000] {runner.py:60} INFO - Trying to run dbtRunner with:
+ ['run', '--models', 'temp', '--project-dir', '/tmp/tmpv159af15', '--profiles-dir', '/tmp/cosmos/profile/e6e13df970e8fe3ebb4d61c03236437e24a01a4909ada5aa9ec817ff39ff3ca3', '--profile', 'default', '--target', 'dev']
+ in /tmp/tmpv159af15
+[2025-04-23T10:57:04.514+0000] {logging_mixin.py:190} INFO - 10:57:04  Running with dbt=1.8.7
+[2025-04-23T10:57:04.584+0000] {logging_mixin.py:190} INFO - 10:57:04  Registered adapter: postgres=1.9.0
+[2025-04-23T10:57:05.046+0000] {logging_mixin.py:190} INFO - 10:57:05  Found 5 models, 626 macros
+[2025-04-23T10:57:05.048+0000] {logging_mixin.py:190} INFO - 10:57:05
+[2025-04-23T10:57:05.088+0000] {logging_mixin.py:190} INFO - 10:57:05  Concurrency: 1 threads (target='dev')
+[2025-04-23T10:57:05.088+0000] {logging_mixin.py:190} INFO - 10:57:05
+[2025-04-23T10:57:05.090+0000] {logging_mixin.py:190} INFO - 10:57:05  1 of 1 START sql table model transformed.temp .................................. [RUN]
+[2025-04-23T10:57:05.122+0000] {logging_mixin.py:190} INFO - 10:57:05  1 of 1 ERROR creating sql table model transformed.temp ......................... [ERROR in 0.03s]
+[2025-04-23T10:57:05.127+0000] {logging_mixin.py:190} INFO - 10:57:05
+[2025-04-23T10:57:05.127+0000] {logging_mixin.py:190} INFO - 10:57:05  Finished running 1 table model in 0 hours 0 minutes and 0.08 seconds (0.08s).
+[2025-04-23T10:57:05.143+0000] {logging_mixin.py:190} INFO - 10:57:05
+[2025-04-23T10:57:05.144+0000] {logging_mixin.py:190} INFO - 10:57:05  Completed with 1 error and 0 warnings:
+[2025-04-23T10:57:05.144+0000] {logging_mixin.py:190} INFO - 10:57:05
+[2025-04-23T10:57:05.144+0000] {logging_mixin.py:190} INFO - 10:57:05    Database Error in model temp (models/temp.sql)
+  syntax error at or near ")"
+  LINE 22:   );
+             ^
+  compiled code at target/run/weather/models/temp.sql
+[2025-04-23T10:57:05.144+0000] {logging_mixin.py:190} INFO - 10:57:05
+[2025-04-23T10:57:05.145+0000] {logging_mixin.py:190} INFO - 10:57:05  Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[2025-04-23T10:57:06.153+0000] {processor.py:716} WARNING - Failed to parse column lineage: Empty statement list
+[2025-04-23T10:57:06.153+0000] {local.py:465} INFO - Inlets: []
+[2025-04-23T10:57:06.153+0000] {local.py:466} INFO - Outlets: []
+[2025-04-23T10:57:06.153+0000] {local.py:656} INFO - Assigning inlets/outlets with DatasetAlias
+[2025-04-23T10:57:06.169+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/operators/base.py", line 299, in execute
+    self.build_and_run_cmd(context=context, cmd_flags=self.add_cmd_flags())
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/operators/local.py", line 708, in build_and_run_cmd
+    result = self.run_command(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/operators/local.py", line 556, in run_command
+    self.handle_exception(result)
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/operators/local.py", line 227, in handle_exception_dbt_runner
+    return dbt_runner.handle_exception_if_needed(result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/dbt/runner.py", line 113, in handle_exception_if_needed
+    raise CosmosDbtRunError(f"dbt invocation completed with errors: {error_message}")
+cosmos.exceptions.CosmosDbtRunError: dbt invocation completed with errors: temp: Database Error in model temp (models/temp.sql)
+  syntax error at or near ")"
+  LINE 22:   );
+             ^
+  compiled code at target/run/weather/models/temp.sql
+[2025-04-23T10:57:06.173+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=dbt_transform, task_id=dbt_task_group.temp_run, run_id=manual__2025-04-23T10:46:42.794055+00:00, execution_date=20250423T104642, start_date=20250423T105701, end_date=20250423T105706
+[2025-04-23T10:57:06.187+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-23T10:57:06.187+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 312 for task dbt_task_group.temp_run (dbt invocation completed with errors: temp: Database Error in model temp (models/temp.sql)
+  syntax error at or near ")"
+  LINE 22:   );
+             ^
+  compiled code at target/run/weather/models/temp.sql; 13433)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/operators/base.py", line 299, in execute
+    self.build_and_run_cmd(context=context, cmd_flags=self.add_cmd_flags())
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/operators/local.py", line 708, in build_and_run_cmd
+    result = self.run_command(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/operators/local.py", line 556, in run_command
+    self.handle_exception(result)
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/operators/local.py", line 227, in handle_exception_dbt_runner
+    return dbt_runner.handle_exception_if_needed(result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/dbt/runner.py", line 113, in handle_exception_if_needed
+    raise CosmosDbtRunError(f"dbt invocation completed with errors: {error_message}")
+cosmos.exceptions.CosmosDbtRunError: dbt invocation completed with errors: temp: Database Error in model temp (models/temp.sql)
+  syntax error at or near ")"
+  LINE 22:   );
+             ^
+  compiled code at target/run/weather/models/temp.sql
+[2025-04-23T10:57:06.223+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-23T10:57:06.231+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-23T10:57:06.232+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

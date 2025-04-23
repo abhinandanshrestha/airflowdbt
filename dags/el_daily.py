@@ -3,7 +3,7 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator, BranchPythonOperator
 from airflow.operators.empty import EmptyOperator
-import pytz
+from pytz import timezone
 import requests
 from datetime import datetime, timedelta
 import logging
@@ -12,6 +12,9 @@ import pandas as pd
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow.decorators import task
 from sqlalchemy import create_engine
+
+# Define the timezone as Nepal Time
+nepal_time = timezone('Asia/Kathmandu')
 
 API_KEY = Variable.get("weather_api_key")
 API_URL = f"http://api.weatherapi.com/v1/history.json?key={API_KEY}&q=Kathmandu&dt="
@@ -97,7 +100,7 @@ def branch_table_exists():
 
 default_args = {
     'owner': 'airflow',
-    'start_date': datetime(2025, 4, 23),
+    'start_date': datetime(2025, 4, 18, 23, 55, tzinfo=nepal_time),  # Set start time at 23:55 Nepal Time
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
 }
@@ -106,21 +109,26 @@ with DAG(
     'fetch_weather_data_daily',
     default_args=default_args,
     description='A DAG to fetch weather data from the Weather API',
-    schedule_interval=None,
+    # schedule_interval=None,
+    # schedule_interval='@daily',
+    # schedule_interval='15 23 * * *',
+    schedule_interval='0 5 * * *',
     catchup=False,
 ) as dag:
 
     start = EmptyOperator(task_id='start')
-    extract_today = EmptyOperator(task_id='extract_today_branch')
-    extract_backfill = EmptyOperator(task_id='extract_backfill_branch')
     end = EmptyOperator(task_id='end')
-
+    
     branching = BranchPythonOperator(
-        task_id='branch_table_check',
+        task_id='check_if_table_exists',
         python_callable=branch_table_exists,
     )
 
+    extract_today = EmptyOperator(task_id='extract_today_branch')
+    extract_backfill = EmptyOperator(task_id='extract_backfill_branch')
+    
     # Today's data extraction and loading
+    # The .override() method allows you to do this without having to create a new operator from scratch, providing flexibility when dynamically generating tasks.
     extract_today_data = extract_weather_data.override(task_id='extract_today_data')(str(datetime.now().date()))
     load_today = load_to_postgres.override(task_id='load_today')(extract_today_data)
 
@@ -131,8 +139,8 @@ with DAG(
 
     for i in range(1, 8):
         date = str((datetime.now() - timedelta(days=i)).date())
-        extract = extract_weather_data.override(task_id=f'extract_backfill_data_{i}')(date)
-        load = load_to_postgres.override(task_id=f'load_backfill_data_{i}')(extract)
+        extract = extract_weather_data.override(task_id=f'extract_backfill_data_{date}')(date)
+        load = load_to_postgres.override(task_id=f'load_backfill_data_{date}')(extract)
 
         previous_task >> extract >> load
         previous_task = load
@@ -143,10 +151,6 @@ with DAG(
     start >> branching
     branching >> extract_today
     branching >> extract_backfill
-    
-    
-    
-    
     
 # from airflow import DAG
 # from airflow.operators.python import PythonOperator, BranchPythonOperator

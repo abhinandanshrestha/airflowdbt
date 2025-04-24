@@ -4,7 +4,7 @@
 pip install dbt-core dbt-postgres
 ```
 
-## Step 2: create packages.yml file inside your dbt project, these packages are required for introducing surrogate keys and add
+## Step 2: create packages.yml file inside your dbt project, these packages are required for introducing surrogate keys
 ```
 packages:
   - package: dbt-labs/dbt_utils

@@ -95,7 +95,7 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env
 
 # Step2:
 ```
-docker compose up -d
+docker compose up --build -d
 ```
 
 # Step3:

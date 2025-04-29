@@ -47,17 +47,33 @@ There are very high number of columns in fact table, for simplicity of understan
 pip install dbt-core dbt-postgres
 ```
 
-## Step 2: create packages.yml file inside your dbt project, these packages are required for introducing surrogate keys
+## Step 2: initialize dbt project
+```
+dbt init <project_name>
+```
+
+## Step 3: change directory to project
+```
+cd /path/to/<project_name>
+```
+
+## Step 4: create packages.yml file inside your dbt project, these packages are required for introducing surrogate keys
 ```
 packages:
   - package: dbt-labs/dbt_utils
     version: [">=0.8.0", "<1.0.0"]
 ```
 
-## Step 3 : Run
+## Step 5 : Run
 ```
 dbt deps
 ```
+
+## Step 6 : Run
+```
+dbt debug
+```
+
 ### SQL For Simulation
 ```
 create table weather (
